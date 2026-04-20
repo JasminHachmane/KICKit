@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KICKit | Profiel maken</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="profiel">
+  <main class="screen">
+    <div class="stadium-bg"></div>
+    <div class="top-glass left"></div>
+    <div class="top-glass right"></div>
+
+    <header class="topbar">
+      <div class="top-label">speler instellen</div>
+    </header>
+
+    <section class="profile-layout">
+      <div class="profile-left glass-panel">
+        <h1 class="main-title small">JOUW SPELER</h1>
+
+        <div class="preview-stage">
+          <img id="previewMascot" src="assets/mascot-lion.png" alt="Mascotte" class="preview-mascot">
+
+          <div class="preview-shirt pink" id="previewShirt">
+            <div class="preview-number" id="previewNumber">10</div>
+            <div class="preview-name" id="previewName">JOUW NAAM</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="profile-right glass-panel">
+        <h2 class="form-title">Naam invullen</h2>
+        <input type="text" id="nameInput" class="game-input" maxlength="18" placeholder="Typ hier de naam">
+
+        <h2 class="form-title">Shirt kiezen</h2>
+        <div class="shirt-options">
+          <button class="shirt-card selected" data-shirt="pink">
+            <div class="mini-shirt pink"></div>
+            <span>FC KICKit</span>
+          </button>
+
+          <button class="shirt-card" data-shirt="orange">
+            <div class="mini-shirt orange"></div>
+            <span>FC WK</span>
+          </button>
+        </div>
+
+        <h2 class="form-title">Nummer kiezen</h2>
+        <input type="number" id="numberInput" class="game-input" min="1" max="99" value="10">
+
+        <button class="big-button blue" id="toModeBtn">GA VERDER</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

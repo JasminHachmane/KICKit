@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KICKit | Spel</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="spel">
+  <main class="screen">
+    <div class="stadium-bg"></div>
+    <div class="top-glass left"></div>
+    <div class="top-glass right"></div>
+
+    <header class="topbar">
+      <div class="top-label">spelen</div>
+    </header>
+
+    <section class="game-screen">
+      <div class="game-arena" id="gameArena">
+        <div class="lives" id="livesDisplay">
+         ⚽ ⚽ ⚽
+        </div>
+        <div class="goal-frame">
+          <div class="target-zone" id="targetZone"></div>
+        </div>
+
+        <div class="crosshair" id="crosshair"></div>
+        <div class="ball" id="ball">⚽</div>
+
+        <div class="helper-box">
+          <img id="helperMascot" src="img/leeuw.png" alt="Mascotte" class="helper-mascot">
+          <div class="helper-bubble" id="helperText">Richt op het rode vak en klik.</div>
+        </div>
+
+        <div class="result-overlay" id="resultOverlay">
+          <h1 id="resultTitle">GOAL!</h1>
+          <p id="resultText">Wat goed gedaan!</p>
+          <button class="big-button blue" id="toResultBtn">GA VERDER</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <audio id="cheerAudio" src="vishiv-crowd-cheering-in-stadium-435357.mp3"></audio>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KICKit | Kies jouw mascotte</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="speler-kiezen">
+  <main class="screen">
+    <div class="stadium-bg"></div>
+    <div class="top-glass left"></div>
+    <div class="top-glass right"></div>
+
+    <header class="topbar">
+      <div class="top-label">speler uitkiezen</div>
+    </header>
+
+    <section class="center-layout">
+      <h1 class="main-title">KIES JOUW SPELER</h1>
+
+      <div class="player-choices">
+        <button class="player-card" data-mascot="lion" data-label="Leeuw" data-image="img/leeuw.png">
+          <img src="img/leeuw.png" alt="Leeuw">
+        </button>
+
+        <button class="player-card" data-mascot="dragon" data-label="Draak" data-image="img/draak.png">
+          <img src="img/draak.png" alt="Draak">
+        </button>
+
+        <button class="player-card" data-mascot="fox" data-label="Vos" data-image="img/vos.png">
+          <img src="img/vos.png" alt="Vos">
+        </button> 
+
+        <button class="player-card" data-mascot="cat" data-label="Kat" data-image="img/kat.png">
+          <img src="img/kat.png" alt="Kat">
+        </button>
+      </div>
+
+      <button class="big-button blue" id="toProfileBtn" disabled>GA VERDER</button>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

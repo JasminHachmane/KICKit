@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KICKit | Resultaat</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="resultaat">
+  <main class="screen">
+    <div class="stadium-bg"></div>
+    <div class="top-glass left"></div>
+    <div class="top-glass right"></div>
+
+    <header class="topbar">
+      <div class="top-label">eindscherm</div>
+    </header>
+
+    <section class="result-layout glass-panel">
+      <div class="result-left">
+        <img id="resultMascot" src="assets/mascot-lion.png" alt="Mascotte" class="result-mascot">
+
+        <div class="result-shirt pink" id="resultShirt">
+          <div class="preview-number" id="resultNumber">10</div>
+          <div class="preview-name" id="resultName">JOUW NAAM</div>
+        </div>
+      </div>
+
+      <div class="result-right">
+        <h1 class="main-title small">TOP GEDAAN!</h1>
+        <p class="result-subline" id="resultSubline">Jij scoorde een goal!</p>
+
+        <div class="result-buttons">
+          <button class="big-button blue" onclick="window.print()">PRINT</button>
+          <button class="big-button pink" id="restartBtn">OPNIEUW</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

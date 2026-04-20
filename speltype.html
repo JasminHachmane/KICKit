@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KICKit | Kies hoe je speelt</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="speltype">
+  <main class="screen">
+    <div class="stadium-bg"></div>
+    <div class="top-glass left"></div>
+    <div class="top-glass right"></div>
+
+    <header class="topbar">
+      <div class="top-label">speltype</div>
+    </header>
+
+    <section class="center-layout">
+      <h1 class="main-title">KIES HOE JE SPEELT</h1>
+
+      <div class="mode-grid">
+        <button class="mode-card" data-mode="voet">
+          <div class="mode-emoji">🦶</div>
+          <div class="mode-title">SCHIETEN</div>
+          <div class="mode-text">Richt met de muis en klik om te schieten</div>
+        </button>
+
+        <button class="mode-card" data-mode="hand">
+          <div class="mode-emoji">🖐</div>
+          <div class="mode-title">GOOIEN</div>
+          <div class="mode-text">Pak de bal en probeer raak te schieten</div>
+        </button>
+      </div>
+
+      <button class="big-button blue" id="toGameBtn" disabled>START HET SPEL</button>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
